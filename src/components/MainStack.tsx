@@ -1,13 +1,14 @@
 import { BaseNavigationContainer } from '@react-navigation/core';
 import * as React from "react";
 import { stackNavigatorFactory } from "react-nativescript-navigation";
-import { AuthScreen } from './screens/AuthScreen';
-import { HomeScreen } from './screens/HomeScreen';
-import { ProductListScreen } from './screens/ProductListScreen';
-import { ProductDetailScreen } from './screens/ProductDetailScreen';
-import { ChatScreen } from './screens/ChatScreen';
-import { ProfileScreen } from './screens/ProfileScreen';
-import { SettingsScreen } from './screens/SettingsScreen';
+import { AuthScreen } from '../screens/AuthScreen';
+// import { HomeScreen } from '../screens/HomeScreen';
+import { ProductListScreen } from '../screens/ProductListScreen';
+import { ProductDetailScreen } from '../screens/ProductDetailScreen';
+import { ChatScreen } from '../screens/ChatScreen';
+// import { ProfileScreen } from '../screens/ProfileScreen';
+// import { SettingsScreen } from '../screens/SettingsScreen';
+
 
 const StackNavigator = stackNavigatorFactory();
 

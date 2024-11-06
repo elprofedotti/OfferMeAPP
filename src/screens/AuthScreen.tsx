@@ -2,8 +2,15 @@ import * as React from "react";
 import { useState } from "react";
 import { StyleSheet } from "react-nativescript";
 import { AuthService } from "../services/AuthService";
+import ScreenProps from "./screen"; // Importa la interfaz ScreenProps
 
-export function AuthScreen({ navigation }) {
+// Extiende la interfaz ScreenProps con las props específicas de AuthScreen
+interface AuthScreenProps extends ScreenProps {
+  navigation: NavigationProp<any>; // Usa NavigationProp aquí
+}
+
+export const AuthScreen: React.FC<AuthScreenProps> = ({ navigation }) => {
+  // ... tu código aquí
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [isLogin, setIsLogin] = useState(true);
@@ -64,6 +71,7 @@ export function AuthScreen({ navigation }) {
     </flexboxLayout>
   );
 }
+
 
 const styles = StyleSheet.create({
   container: {
