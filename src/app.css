@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.action-bar {
+  background-color: #128C7E; /* WhatsApp color */
+  color: white;
+}
+
+.primary-button {
+  background-color: #25D366; /* WhatsApp accent color */
+  color: white;
+  font-weight: bold;
+  padding: 12 24;
+  border-radius: 8;
+}
+
+.chat-bubble {
+  background-color: #DCF8C6;
+  padding: 8 12;
+  border-radius: 8;
+  margin: 4 0;
+}
+
+/* WhatsApp inspired theme */
+:root {
+  --primary-color: #128C7E;
+  --secondary-color: #25D366;
+  --background-color: #ECE5DD;
+  --chat-bubble: #DCF8C6;
+  --text-primary: #075E54;
+  --text-secondary: #4A4A4A;
+}
+
+/* Font settings */
+label, button {
+  font-family: "System";
+}
