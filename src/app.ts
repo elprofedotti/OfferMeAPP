@@ -14,4 +14,4 @@ Object.defineProperty(globalThis, '__DEV__', { value: false });
 ReactNativeScript.start(React.createElement(MainStack, {}, null));
 
 // Do not place any code after the application has been started as it will not
-// be executed on iOS.
+// be executed on iOS....
